@@ -17,7 +17,7 @@ This project demonstrates the implementation of Object-Oriented Programming (OOP
 ## Technologies Used
 
 <div style="display: flex; flex-direction: row;">
-  <img src="img/ts.png" alt="TypeScript Logo" width="100" style="margin-right: 20px;"/>
+  <img src="images/ts.png" alt="TypeScript Logo" width="100" style="margin-right: 20px;"/>
   <img src="img/node.png" alt="Node.js Logo" width="100" style="margin-right: 20px;"/>
 </div>
 
