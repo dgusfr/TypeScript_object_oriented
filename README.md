@@ -1,1 +1,0 @@
-# TypeScript_object_oriented
