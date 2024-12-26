@@ -70,9 +70,34 @@ The project is organized with a focus on maintainability and scalability, adheri
 - npm or yarn
 - TypeScript (installed globally)
 
-### Installation
+### Project Structure
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd project-directory
+  ```
+  TypeScript_Object_Oriented_Project
+  │
+  ├── POO
+  │   ├── Admin.ts
+  │   ├── Teacher.ts
+  │   ├── User.ts
+  │   ├── main.ts
+  │
+  ├── test
+  │   ├── Admin.test.ts
+  │   ├── Teacher.test.ts
+  │   ├── User.test.ts
+  │
+  ├── img
+  │   ├── ts.png
+  │   ├── node.png
+  │
+  ├── dist
+  │   ├── (Compiled TypeScript files)
+  │
+  ├── jest.config.ts
+  ├── tsconfig.json
+  ├── .eslintrc.js
+  ├── .prettierrc
+  ├── package.json
+  ├── README.md
+  └── LICENSE.md
+  ```
