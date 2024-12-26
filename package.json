@@ -1,4 +1,13 @@
 {
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/POO/main.js",
+    "test": "jest",
+    "dev": "ts-node POO/main.ts",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "type": "module",
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
