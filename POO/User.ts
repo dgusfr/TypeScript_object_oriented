@@ -6,7 +6,7 @@ export default class User {
   #active: boolean;
 
   constructor(name: string, email: string, birthDate: string, role: string = "student", active: boolean = true) {
-    this.name = name; // Utilize setters for validation
+    this.name = name; 
     this.email = email;
     this.birthDate = birthDate;
     this.role = role;
