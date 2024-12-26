@@ -101,3 +101,6 @@ The project is organized with a focus on maintainability and scalability, adheri
   ├── README.md
   └── LICENSE.md
   ```
+
+## Author
+Developed by Diego Franco.
