@@ -41,3 +41,9 @@ type GenericObject = Record<string, any>;
 export const updateObjectProperty = (obj: GenericObject, key: string, value: any): GenericObject => {
   return { ...obj, [key]: value };
 };
+
+type GenericObject = Record<string, any>;
+
+export const hasProperty = (obj: GenericObject, key: string): boolean => {
+  return obj.hasOwnProperty(key);
+};
