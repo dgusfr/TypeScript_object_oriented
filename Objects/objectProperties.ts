@@ -61,3 +61,6 @@ export const cloneProperties = (target: GenericObject, source: GenericObject, ke
   });
   return target;
 };
+export const mapObjectValues = <T extends object, U>(obj: T, callback: (value: T[keyof T]) => U): Record<keyof T, U> => {
+  return Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, callback(value)])) as Record<keyof T, U>;
+};
