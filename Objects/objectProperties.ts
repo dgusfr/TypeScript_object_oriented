@@ -35,3 +35,9 @@ export const sortProducts = (products: Product[], key: keyof Product): Product[]
 export const deepCopy = <T>(obj: T): T => {
   return JSON.parse(JSON.stringify(obj));
 };
+
+type GenericObject = Record<string, any>;
+
+export const updateObjectProperty = (obj: GenericObject, key: string, value: any): GenericObject => {
+  return { ...obj, [key]: value };
+};
