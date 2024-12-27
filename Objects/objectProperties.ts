@@ -51,3 +51,13 @@ export const hasProperty = (obj: GenericObject, key: string): boolean => {
 export const areObjectsEqual = (obj1: object, obj2: object): boolean => {
   return JSON.stringify(obj1) === JSON.stringify(obj2);
 };
+type GenericObject = Record<string, any>;
+
+export const cloneProperties = (target: GenericObject, source: GenericObject, keys: string[]): GenericObject => {
+  keys.forEach((key) => {
+    if (key in source) {
+      target[key] = source[key];
+    }
+  });
+  return target;
+};
