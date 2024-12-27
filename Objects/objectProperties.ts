@@ -32,3 +32,6 @@ type Product = {
 export const sortProducts = (products: Product[], key: keyof Product): Product[] => {
   return [...products].sort((a, b) => (a[key] > b[key] ? 1 : -1));
 };
+export const deepCopy = <T>(obj: T): T => {
+  return JSON.parse(JSON.stringify(obj));
+};
