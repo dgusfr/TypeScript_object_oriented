@@ -12,3 +12,13 @@ export const person: Person = {
 export const updatePersonAge = (newAge: number): void => {
   person.age = newAge;
 };
+
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+};
+
+export const filterProducts = (products: Product[], maxPrice: number): Product[] => {
+  return products.filter((product) => product.price <= maxPrice);
+};
