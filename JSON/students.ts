@@ -1,4 +1,4 @@
-import studentData from "./student.json";
+import studentData from "./students.json";
 
 type Student = {
   id: number;
