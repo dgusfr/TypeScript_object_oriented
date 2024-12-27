@@ -1,4 +1,4 @@
-import studentData from "./students.json";
+import studentsData from "./students.JSON";
 
 type Student = {
   id: number;
@@ -7,4 +7,8 @@ type Student = {
   courses: string[];
 };
 
-export const getStudent = (): Student => studentData as Student;
+export const getAllStudents = (): Student[] => studentsData as Student[];
+
+export const findStudentById = (id: number): Student | undefined => {
+  return getAllStudents().find((student) => student.id === id);
+};
